@@ -79,3 +79,5 @@ The final trained model is deployed using **Streamlit**, allowing users to uploa
 
 ## Author
 **Hari Prasath P**
+
+🔗 Live App: https://resume-classification-nlp.streamlit.app
