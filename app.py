@@ -9,7 +9,7 @@ import pandas as pd
 import streamlit as st
 
 # NLP libraries
-import spacy
+#import spacy
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import RegexpTokenizer
@@ -35,7 +35,7 @@ ensure_nltk_data()
 # -------------------------
 # Load spaCy model safely
 try:
-    nlp = spacy.load("en_core_web_sm")
+   # nlp = spacy.load("en_core_web_sm")
 except OSError:
     st.error("spaCy model 'en_core_web_sm' not found. Run:\n\npython -m spacy download en_core_web_sm")
     raise
