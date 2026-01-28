@@ -1,4 +1,11 @@
 # app.py (final fixed version)
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, "modelDT.pkl")
+VECTORIZER_PATH = os.path.join(BASE_DIR, "vector.pkl")
+
 
 import io
 import os
@@ -151,8 +158,8 @@ def preprocess(text):
 # ---------------------------------------------------------
 # Load model and vectorizer
 try:
-    model = pickle.load(open("modelDT.pkl", "rb"))
-    vectorizer = pickle.load(open("vector.pkl", "rb"))
+    model = pickle.load(open(MODEL_PATH, "rb"))
+    vectorizer = pickle.load(open(VECTORIZER_PATH, "rb"))
 except Exception as e:
     st.error(f"Failed to load model/vectorizer: {e}")
     st.stop()
