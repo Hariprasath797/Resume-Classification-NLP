@@ -32,13 +32,6 @@ def ensure_nltk_data():
             nltk.download(pkg)
 ensure_nltk_data()
 
-# -------------------------
-# Load spaCy model safely
-try:
-   # nlp = spacy.load("en_core_web_sm")
-except OSError:
-    st.error("spaCy model 'en_core_web_sm' not found. Run:\n\npython -m spacy download en_core_web_sm")
-    raise
 
 # Precompute stopwords
 STOPWORDS = set(nltk.corpus.stopwords.words("english"))
