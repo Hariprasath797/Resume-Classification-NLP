@@ -54,7 +54,7 @@ based on:
 6. Web application deployment
 
 ## Deployment
-The final trained model is deployed using **Flask / Streamlit**, allowing users to upload resumes 
+The final trained model is deployed using **Streamlit**, allowing users to upload resumes 
 and receive predicted job categories through a web interface.
 
 ## Future Enhancements
